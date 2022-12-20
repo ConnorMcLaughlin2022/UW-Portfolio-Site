@@ -1,0 +1,246 @@
+* {
+    background-color: darkolivegreen;
+    margin: 0px;
+    padding: 0;
+}
+:root {
+    --borders: tan;
+}
+header {
+    padding: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: darkolivegreen;
+    color: #ffffff;
+    border-bottom: 2px solid black;
+
+}
+h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+nav {
+    padding-top:15px ;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    position: relative;
+    z-index: 2;
+}
+nav ul {
+    list-style-type: none;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+nav a {
+    color: tan;
+    text-decoration: underline;
+}
+.hero-image {
+    background: url(images/mountain\ photo.jpg) no-repeat center; 
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+figure img {
+    display: flex;
+    height: 80%;
+    width: 20;
+    margin: 5px;
+
+   
+}
+  .hero-text {
+    text-align: center;
+
+ 
+    transform: translate(-50%, -50%);
+    color: tan;
+    background-color: transparent;
+    border-radius: 5px;
+  }
+/* .top-picture {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 2px;
+    background-image: url("./images/mountain\ photo.jpg");
+    background-size: cover;
+    background-position: center;
+} */
+
+/* aside {
+    margin-right: 20px;
+    padding: 5px;
+    clear: both;
+    float: left;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-right: 2 solid black;
+}*/
+/* .side {
+    margin-right: 2px;
+    padding: 5px;
+    clear: both;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-right: 1 solid black;
+    text-align: right;
+
+} */
+.columns {
+display: flex;
+justify-content: space-between;
+}
+.side { 
+    flex-basis: 30%;
+    margin-right: 3%;
+    margin-top: 1%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-right: 1%;
+    text-align: right;
+    border-right: 2px solid black;
+    
+
+}
+
+.bio {
+    flex-basis: 60%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+}
+.wrap {
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.refactor-img {
+    background-image: url(./images/horiseon.png);
+    height: 300px;
+    width: 500px;
+    background-size: cover;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    flex-basis: 92%;
+    
+    border: 4px solid tan ;
+}
+
+.second {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+}
+
+.css-img {
+    background-image: url(./images/Css\ cheatsheet.jpg);
+    height:200px;
+    width: 250px;
+    background-size: cover;
+    margin-top: 2%;
+    margin-right: 2%;
+    border: 2px solid tan ;
+    flex-basis: 45%;
+   
+}
+.stock1-img {
+    background-image: url(./images/stock1.jpg);
+    height:200px;
+    width: 250px;
+    background-size: cover;
+    margin-top: 2%;
+    margin-right: 2%;
+    border: 2px solid tan ;
+    flex-basis: 45%;
+}
+.stock2-img {
+    background-image: url(./images/stock2.jpg);
+    height:200px;
+    width: 250px;
+    background-size: cover;
+    margin-top: 2%;
+    margin-right: 2%;
+    border: 2px solid tan ;
+    flex-basis:45%;
+}
+.stock3-img {
+    background-image: url(./images/stock3.jpg);
+    height:200px;
+    width: 250px;
+    background-size: cover;
+    margin-top: 2%;
+    margin-right: 2%;
+    border: 2px solid tan ;
+    flex-basis: 45%;
+   
+
+}
+h3, p {
+    background-color: tan;
+   
+}
+.phone {
+    overflow: visible;
+    white-space: nowrap;
+}
+.project {
+    border: 5px var(--borders);
+    height: 30px;
+    width: 150px;
+    background: var(--borders);
+    position:relative;
+    top: 20%;
+    left: 0px;
+    margin: 2%;
+    background-color: tan;
+}   
+.top-project {
+    border: 5px var(--borders);
+    height: 30px;
+    width: 150px;
+    background: var(--borders);
+    position:relative;
+    top: 20%;
+    left: 0px;
+}   
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    text-decoration: none;
+}
+footer ul li {
+    font-weight: bold;
+    margin-left: 3%;
+}
+
+@media screen and (max-width:838px) {
+    .side {
+        border-bottom: 3px solid gray;
+        border-right: 0px;
+        justify-content: center;
+    }
+    .columns {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    ul {
+        flex-direction: column;
+    
+    }
+}
